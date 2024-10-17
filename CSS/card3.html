@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card | CSS & JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .card-1 {
+            margin-top: 20px;
+            margin-left: 20px;
+        } */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #222;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .container .card {
+            position: relative;
+            width: 320px;
+            height: 400px;
+            background: rgba(45,45,45,1);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .container .card::before {
+            content: '';
+            position: absolute;
+            top: var(--y);
+            left: var(--x);
+            transform: translate(-50%, -50%);
+            background: radial-gradient(var(--clr),transparent, transparent);
+            width: 400px;
+            height: 400px;
+            opacity: 0;
+            transition: 0.5s, top 0s, left 0s;
+        }
+        .container .card:hover::before {
+            opacity: 1;
+        }
+        .container .card::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border-radius: 18px;
+            background: rgba(45,45,45,0.75);
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        let cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.onmousemove = function(e)
+            {
+                let x= e.pageX - card.offsetLeft;
+                let y= e.pageY - card.offsetTop;
+
+                card.style.setProperty('--x', x + 'px');
+                card.style.setProperty('--y', y + 'px');
+            }
+        })
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card" style="--clr: #0f0;">
+            <!-- <div class="card-1">
+                <h2 style="text-align: center; margin-bottom: 20px;">HTML</h2>
+                <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div> -->
+        </div>
+        <div class="card" style="--clr: #ff0;">
+            <!-- <div class="card-1">
+                <h2 style="text-align: center; margin-bottom: 20px;">CSS</h2>
+                <p>CSS, or Cascading Style Sheets, is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. It is a language designed to simplify the process of making web pages presentable by handling the look and feel of the web content. CSS allows you to control the layout of multiple web pages all at once.</p>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+</html>

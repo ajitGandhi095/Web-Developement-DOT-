@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Border | CSS</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .card {
+            margin: 0 auto;
+            padding: 2em;
+            width: 300px;
+            background: #2d3140;
+            text-align: center;
+            border-radius: 10px;
+            color: rgb(248, 228, 228);
+            margin-top: 50px;
+            position: relative;
+            text-align: justify;
+            word-break: break-all;
+        }
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        .card::after, .card::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle),#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: 3s spin linear infinite;
+        }
+        .card::before {
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+        @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+            to {
+                --angle: 360deg;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <h2>Animated Border</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas corrupti tempora in aspernatur, possimus rerum? Tenetur itaque autem error fugiat sunt ab labore quo tempore natus, facere exercitationem eligendi saepe reprehenderit atque iure, sint aut, consequatur deserunt officiis ipsa ea! Eligendi ducimus harum, odit nostrum odio porro possimus a reprehenderit voluptate non aliquid unde ullam earum voluptatibus qui ipsam?</p>
+    </div>
+</body>
+</html>
