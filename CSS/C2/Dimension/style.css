@@ -1,0 +1,19 @@
+.box1{
+    border: 1px solid black;
+    max-height: 200px;
+    overflow: scroll;
+}
+.box2 {
+    margin-top: 10px;
+    border: 1px solid black;
+    min-height: 100px;
+}
+.box3 {
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 100px;
+    /* overflow: visible; By default 
+       overflow: hidden;
+       overflow: scroll; */
+    overflow: auto;
+}

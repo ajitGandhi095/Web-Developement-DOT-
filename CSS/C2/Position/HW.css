@@ -1,0 +1,33 @@
+.box{
+    background-color: rgba(255, 228, 196, 0.511);
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 200px;
+    top: 60px;
+}
+#box1 {
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+#box2 {
+    position: relative;
+    left: 385px;
+    top: 10px;
+}
+#box3 {
+    position: relative;
+    right: 399px;
+    top: 340px;
+}
+#box4 {
+    position: relative;
+    left: 590px;
+    top: 186px;
+}
+#box5 {
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
