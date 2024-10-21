@@ -1,0 +1,17 @@
+.box {
+    background-color: aqua;
+    /* transform: translate(50px, 80px); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(200px); */
+    /* transform: rotate(-45deg); */
+    margin: 100px;
+    /* transform: scale(2,3); */
+    /* transform: scale(2.5,3.2); */
+    /* transform: scaleX(2); */
+    transform: scaleY(3);
+    /* transform: skew(40deg); */
+    /* transform: skew(65deg); */
+    /* transform: skew(-65deg); */
+    transform: skewX(50deg);
+    transform: skewY(30deg);
+} 
