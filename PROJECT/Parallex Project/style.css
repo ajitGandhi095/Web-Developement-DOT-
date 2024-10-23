@@ -7,7 +7,7 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 12px;
+    perspective: 11px;
 }
 .container {
     position: relative;
@@ -23,10 +23,65 @@
     height: 100%;
     width: 100%;
     z-index: -1;
+    object-fit: cover;
 }
 .background {
-    transform: translateZ(-40px) scale(5);
+    transform: translateZ(-43px) scale(5);
 }
 .forground {
-    transform: translateZ(-20px) scale(3);
+    transform: translateZ(-21px) scale(3);
+}
+h1 {
+    position: absolute;
+    top: 5rem;
+    font-size: 8rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-family: "Segoe-UI";
+}
+section {
+    background-color: rgba(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.bg-1 {
+    background-image: url(sport-1.jpg);
+}
+.bg-2 {
+    background-image: url(sport-2.jpg);
+}
+.bg-3 {
+    background-image: url(sport-3.jpg);
+}
+.secheading {
+    margin-top: -2rem;
+    font-size: 4rem;
+    padding: 0 5rem;
+}
+.text {
+    font-size: 1.1rem;
+    padding: 0 5rem;
+    margin: 5rem 0;
+    margin-top: 2rem;
+    font-family: Arial;
+}
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.desc {
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 2.0rem;
+    padding: 10px;
+    border-radius: 10px;
 }
