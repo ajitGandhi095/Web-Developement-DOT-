@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(235, 224, 211);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15% ;
+    margin-left: 25%;
+    height: 300px;
+    width: 550px;
+    border-radius: 10px;
+    background-color: white;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+#mug {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.first-heading {
+    margin-left: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    color: rgb(94, 93, 93);
+}
+.secong-heading {
+    margin-left: 22px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Bernard MT Condensed';
+    width: 170px;
+    letter-spacing: 2px;
+}
+.para {
+    margin-left: 22px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(94, 93, 93);
+}
+.price {
+    margin-left: 22px;
+    margin-bottom: 20px;
+}
+.first-price {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    color: rgb(26, 101, 70);
+}
+.second-price {
+    font-size: 15px;
+    color: rgb(94, 93, 93);
+}
+.button {
+    margin-left: 22px;
+    padding-left: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 230px;
+    background-color: rgb(26, 101, 70);
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 8px;
+}
