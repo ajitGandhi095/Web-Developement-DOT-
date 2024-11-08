@@ -1,0 +1,50 @@
+.container {
+    background-color: yellow;
+    border: 1px solid black;
+    height: 221px;
+    width: 100%;
+}
+.box {
+    background-color: aqua;
+    border: 1px solid hotpink;
+    width: 220px;
+    height: 220px;
+
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+@keyframes anime {
+    0% {
+        width: 212px;
+        background-color: aqua;
+    }
+    30% {
+        width: 35%;
+        background-color: aquamarine;
+    }
+    60% {
+        width: 60%;
+        background-color: blue;
+    }
+    80% {
+        width: 80%;
+        background-color:chocolate;
+    }
+    100% {
+        width: 100%;
+        background-color: blue;
+    }
+}
+
+/* @keyframes anime {
+    from {
+        width: 220px;
+    }
+    to {
+        width: 100%;
+    }
+} */

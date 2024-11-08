@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-red: #e65f1b;
+}
+/* :root {
+    --color-red: #e65f1b;
+} */
+.container {
+    border: 1px solid black;
+    background-color: bisque;
+    height: 400px;
+    width: 500px;
+    background-color: var(--color-red);
+}
+.box {
+    border: 1px solid green;
+    background-color: aqua;
+    --color-red: #e65f1b;
+    color: var(--color-red);
+}
